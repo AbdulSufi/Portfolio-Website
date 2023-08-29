@@ -18,12 +18,11 @@
 }
 
 .headerContainer{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.437), rgba(0, 0, 0, 0.437)), url(background.\ new.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.437), rgba(0, 0, 0, 0.437)), url(Images/background.new.png);
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: black;
     background-position: 60%;
 }
 
@@ -33,6 +32,20 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+@media screen and (max-width: 500px){
+    .parentContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nameofclient{
+        font-size: 1em;
+    }
 }
 
 .links{
@@ -44,12 +57,12 @@
 }
 
 .firstHalf{
-    font-size: 90px;
+    font-size: 3em;
     color: white;
 }
 
 .secondHalf{
-color: #e63b7a;
+color: #F9004D;
 }
 
 
@@ -58,10 +71,11 @@ color: #e63b7a;
     padding-top: 90px;
     padding-left: 90px;
     text-align: left;
+    margin-top: 100px;
 }
 
 .nameofclient{
-    color: #e63b7a;
+    color: #F9004D;
     font-size: 70px;
 }
 
@@ -70,6 +84,9 @@ color: #e63b7a;
     font-size: 70px;
 }
 
+.small-heading{
+    font-size: 23px;
+}
 
 .aboutUsSection{
 display: flex;
@@ -101,15 +118,20 @@ background-color: black;
     color: white;
 }
 
+.infoSection p{
+    font-size: 16px;
+    line-height: 28px;
+}
+
 .aboutUstitle{
-color: #e63b7a;
+color: #F9004D;
 font-size: 50px;
 }
 
 .button {
     padding: 5px 26px;
     border-radius: 30px;
-    background-color:#e63b7a;
+    background-color:#F9004D;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
@@ -130,12 +152,12 @@ font-size: 50px;
 .servicesMini-Container{
     padding: 20px;
     align-items: center;
-    gap: 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-between;
     gap: 20px;
     min-height: 90vh;
-    flex-wrap: wrap;
+
     }
 
 .servicesTitle{
@@ -144,14 +166,15 @@ font-size: 50px;
 
 .miniContainer{
     background-color: rgb(25, 25, 25);
-    margin: 20px;
     border-radius: 10px;
     padding: 40px;
+    width: 350px;
+
 }
 .bt2{
     padding: 5px 26px;
     border-radius: 30px;
-    background-color: #e63b7a;
+    background-color: #F9004D;
     color: white;
     font-size: medium;
     border: 2px solid rgb(226, 56, 56);
@@ -171,7 +194,7 @@ font-size: 40px;
 .bt3{
     padding: 5px 26px;
     border-radius: 30px;
-    background-color: #e63b7a;
+    background-color: #F9004D;
     color: white;
     font-size: medium;
     border: 2px solid rgb(226, 56, 56);
@@ -187,13 +210,29 @@ footer{
 }
 
 .fa-brands{
-    color: #e63b7a;
+    color: #F9004D;
     font-size: 20px;
     padding: 10px;
 }
 
 .footerName{
-    color: #e63b7a;
+    color: #F9004D;
+}
+
+@media screen and (max-width: 500px){
+    .parentContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nameofclient{
+        font-size: 3em;
+    }
+
+    .nameofclientP2{
+        font-size: 45px;
+    }
 }
 
 </style>
@@ -207,7 +246,7 @@ footer{
     <div class="parentContainer">
 
         <div class="logo">
-            <h1 class="firstHalf">Portf<span class="secondHalf">olio</span></h1>
+            <h1 class="firstHalf">Thomas<span class="secondHalf"> & Co</span></h1>
         </div>
 
         <div class="nav">
@@ -219,11 +258,11 @@ footer{
     </div>
 
     <div class="text1">
-        <h2>Welcome to my website</h2>
+        <h2 class="small-heading">Welcome To My Website</h2>
         <br>
-        <h1 class="nameofclient">Huzaifa <span class="nameofclientP2">Sultan</span></h1>
+        <h1 class="nameofclient">Mike <span class="nameofclientP2">Bryan</span></h1>
         <br>
-        <h2>I am a Web Developer</h2>
+        <h2 >I Am a Web developer</h2>
     </div>
 
 </div>
@@ -232,37 +271,36 @@ footer{
 <div class="servicesMain-Container">
     <div class="title">
         <h1 class="servicesTitle">Our Services</h1>
-        <br> <br>
     </div>
 
     <div class="servicesMini-Container" >
 
         <div class="miniContainer">
-            <i class="fa-solid fa-user" style="color: #e63b7a;"></i>
+            <i class="fa-solid fa-bell" style="color: #F9004D;"></i>
             <br> <br> <br>
-            <h2>Web Development</h2>
+            <h2>Consultation:</h2>
             <br> <br>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione hic maiores consectetur tempore commodi magnam numquam laboriosam animi blanditiis facere.</p>
+            <p>Tailored legal advice based on deep analysis and understanding of each case. We ensure clients know their rights and options, guiding them to smart, lawful decisions.</p>
             <br> <br>
             <button class="bt2">Read More</button>
         </div>
 
         <div class="miniContainer">
-            <i class="fa-solid fa-bars" style="color: #e63b7a;"></i>
+            <i class="fa-solid fa-user" style="color: #F9004D;"></i>
             <br> <br> <br>
-            <h2>Web Development</h2>
+            <h2>Representation:</h2>
             <br> <br>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione hic maiores consectetur tempore commodi magnam numquam laboriosam animi blanditiis facere.</p>
+            <p>Offering personalized legal counsel, we guide our clients through their rights, best legal pathways, and most effective informed decisions with the best outcome.</p>
             <br> <br>
             <button class="bt2">Read More</button>
         </div>
 
         <div class="miniContainer">
-            <i class="fa-solid fa-bell" style="color: #e63b7a;"></i>
+            <i class="fa-solid fa-bars" style="color: #F9004D;"></i>
             <br> <br> <br>
-            <h2>Web Development</h2>
+            <h2>Documention:</h2>
             <br> <br>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione hic maiores consectetur tempore commodi magnam numquam laboriosam animi blanditiis facere.</p>
+            <p> Drafting and reviewing diverse legal documents. We ensure precision and alignment with our client's interests, covering everything from contracts to affidavits.</p>
             <br> <br>
             <button class="bt2">Read More</button>
         </div>
@@ -274,17 +312,15 @@ footer{
 <div class="aboutUsSection" >
 
     <div class="aboutusContainer">
-        <img class="imageaboutUs" src="Aboutus.png">
+        <img class="imageaboutUs" src="Images/Aboutus.png">
     </div>
 
     <div class="infoSection">
         <h1 class="aboutUstitle">About Us</h1>
         <br>
-        <h3> Designer & Developer </h3>
-        <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptate eos aliquam, modi velit accusantium porro cumque eum quibusdam perferendis, exercitationem fugit aliquid mollitia sit cum! Ratione repudiandae culpa saepe perferendis ipsa. Quis vero provident nostrum temporibus mollitia ut quibusdam, quasi quam cumque? Dolorum aut unde atque neque! Veniam, dolor.</p>
+        <p>Based in the heart of London, Thomas & King Legal is a distinguished law firm with a rich heritage spanning several decades. Our firm seamlessly blends the traditions of British legal practice with contemporary expertise to navigate today's complex legal landscape. We take pride in our team of exceptional legal minds, trained at top institutions and refined by diverse case experiences, ensuring our clients receive astute and proactive legal counsel. Our clientele ranges from London-based businesses and international corporations to individual residents seeking tailored legal advice. With a reputation built on trust, integrity, and an unwavering commitment to justice, we're not just legal professionals; we're partners in our clients' journeys. Whether it's corporate law, property disputes, or personal legal matters, Thomas & King ensures that London's legal needs are met with precision, care, and the utmost professionalism.</p>
         <br> <br>
-        <button class="button">Contact Me </button>
+        <button class="button">Contact Us </button>
     </div>
 
 </div>
@@ -292,9 +328,9 @@ footer{
 <div class="contactSection">
 
     <dive class="ContactMe-top">
-        <h1>Let Me Build You a Beautiful Website</h1>
+        <h1>Let Us Help You</h1>
         <br> 
-        <button class="bt3">Contact Me</button>
+        <button class="bt3">Contact Us</button>
         <br>
     </dive>
 
@@ -303,16 +339,16 @@ footer{
 
 
 <footer>
-    <h2 class="footerName">Huzaifa Sultan</h2>
+    <h2 class="footerName">Thomas & King</h2>
     <br>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro facere, ducimus soluta voluptatibus cupiditate fugiat minima culpa ex ut vitae!</p>
+    <p>Success, integrity, and relentless pursuit of justice - that's the Thomas & King Legal promise to every client.</p>
     <br>
     <i class="fa-brands fa-facebook"></i>
     <i class="fa-brands fa-instagram"></i>
     <i class="fa-brands fa-linkedin"></i>
     <i class="fa-brands fa-twitter"></i>
     <br> <br>
-    <p>@Copyright rights reserved to TekQubes</p>
+    <p>@ Copyright Reserved</p>
 </footer>
 
 </body>
